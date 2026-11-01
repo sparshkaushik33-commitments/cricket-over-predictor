@@ -13,7 +13,7 @@ const Scoreboard = ({ situation }) => {
     batter1, batter2, bowler,
   } = situation;
 
-  const phaseColor = phase === 'Powerplay' ? '#4caf50' : phase === 'Middle' ? '#ff9800' : '#f44336';
+  const phaseColor = phase === 'Powerplay' ? '#2d7a42' : phase === 'Middle' ? '#d4a017' : '#c0392b';
   const nextOver = oversCompleted + 1;
 
   return (

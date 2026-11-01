@@ -2,15 +2,15 @@ import React from 'react';
 import { OUTCOME_TYPES } from '../logic/overSimulator.js';
 
 const BALL_COLORS = {
-  [OUTCOME_TYPES.DOT]:    { bg: '#2a3a2a', text: '#888',    label: '•' },
-  [OUTCOME_TYPES.ONE]:    { bg: '#1e3a5f', text: '#90caf9', label: '1' },
-  [OUTCOME_TYPES.TWO]:    { bg: '#1a4a6b', text: '#64b5f6', label: '2' },
-  [OUTCOME_TYPES.THREE]:  { bg: '#1a3a5b', text: '#42a5f5', label: '3' },
-  [OUTCOME_TYPES.FOUR]:   { bg: '#1a5f3a', text: '#a5d6a7', label: '4' },
-  [OUTCOME_TYPES.SIX]:    { bg: '#4a1a6b', text: '#ce93d8', label: '6' },
-  [OUTCOME_TYPES.WICKET]: { bg: '#6b1a1a', text: '#ef9a9a', label: 'W' },
-  [OUTCOME_TYPES.WIDE]:   { bg: '#5f4a1a', text: '#ffe082', label: 'Wd' },
-  [OUTCOME_TYPES.NO_BALL]:{ bg: '#5f3a1a', text: '#ffcc80', label: 'Nb' },
+  [OUTCOME_TYPES.DOT]:    { bg: '#1e2e22', text: '#6b836e', label: '•' },
+  [OUTCOME_TYPES.ONE]:    { bg: '#132e1b', text: '#a3b8a8', label: '1' },
+  [OUTCOME_TYPES.TWO]:    { bg: '#1a3a25', text: '#c4a86c', label: '2' },
+  [OUTCOME_TYPES.THREE]:  { bg: '#1a3a25', text: '#e8d5a3', label: '3' },
+  [OUTCOME_TYPES.FOUR]:   { bg: '#1a3d5a', text: '#6db3e8', label: '4' },
+  [OUTCOME_TYPES.SIX]:    { bg: '#3d1a5a', text: '#c9a0e8', label: '6' },
+  [OUTCOME_TYPES.WICKET]: { bg: '#5a1a1a', text: '#f5b7b1', label: 'W' },
+  [OUTCOME_TYPES.WIDE]:   { bg: '#4a3a1a', text: '#f0c430', label: 'Wd' },
+  [OUTCOME_TYPES.NO_BALL]:{ bg: '#4a2e1a', text: '#e8a55a', label: 'Nb' },
 };
 
 const BALL_EMOJI = {

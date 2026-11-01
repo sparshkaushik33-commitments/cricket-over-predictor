@@ -105,21 +105,31 @@ const StartScreen = ({
       {/* Ambient background crease lines & atmosphere */}
       <div className="pitch-crease-bg" aria-hidden="true">
         <svg viewBox="0 0 800 600" className="pitch-crease-svg" preserveAspectRatio="xMidYMid slice">
+          {/* Pitch strip */}
+          <rect x="320" y="60" width="160" height="480" fill="rgba(45, 122, 66, 0.04)" rx="2" />
           {/* Outer pitch corridor */}
-          <rect x="220" y="40" width="360" height="520" fill="none" stroke="rgba(74, 222, 128, 0.05)" strokeWidth="1.5" rx="6" />
+          <rect x="220" y="40" width="360" height="520" fill="none" stroke="rgba(45, 122, 66, 0.06)" strokeWidth="1" rx="4" />
           {/* Popping crease lines */}
-          <line x1="160" y1="130" x2="640" y2="130" stroke="rgba(255, 255, 255, 0.07)" strokeWidth="2" />
-          <line x1="160" y1="470" x2="640" y2="470" stroke="rgba(255, 255, 255, 0.07)" strokeWidth="2" />
+          <line x1="180" y1="130" x2="620" y2="130" stroke="rgba(232, 213, 163, 0.06)" strokeWidth="1.5" />
+          <line x1="180" y1="470" x2="620" y2="470" stroke="rgba(232, 213, 163, 0.06)" strokeWidth="1.5" />
           {/* Bowling creases */}
-          <line x1="240" y1="105" x2="560" y2="105" stroke="rgba(255, 255, 255, 0.1)" strokeWidth="2.5" />
-          <line x1="240" y1="495" x2="560" y2="495" stroke="rgba(255, 255, 255, 0.1)" strokeWidth="2.5" />
+          <line x1="260" y1="108" x2="540" y2="108" stroke="rgba(232, 213, 163, 0.08)" strokeWidth="2" />
+          <line x1="260" y1="492" x2="540" y2="492" stroke="rgba(232, 213, 163, 0.08)" strokeWidth="2" />
           {/* Return creases */}
-          <line x1="240" y1="80" x2="240" y2="130" stroke="rgba(255, 255, 255, 0.08)" strokeWidth="2" />
-          <line x1="560" y1="80" x2="560" y2="130" stroke="rgba(255, 255, 255, 0.08)" strokeWidth="2" />
-          <line x1="240" y1="470" x2="240" y2="520" stroke="rgba(255, 255, 255, 0.08)" strokeWidth="2" />
-          <line x1="560" y1="470" x2="560" y2="520" stroke="rgba(255, 255, 255, 0.08)" strokeWidth="2" />
+          <line x1="260" y1="85" x2="260" y2="130" stroke="rgba(232, 213, 163, 0.05)" strokeWidth="1.5" />
+          <line x1="540" y1="85" x2="540" y2="130" stroke="rgba(232, 213, 163, 0.05)" strokeWidth="1.5" />
+          <line x1="260" y1="470" x2="260" y2="515" stroke="rgba(232, 213, 163, 0.05)" strokeWidth="1.5" />
+          <line x1="540" y1="470" x2="540" y2="515" stroke="rgba(232, 213, 163, 0.05)" strokeWidth="1.5" />
+          {/* Stumps - top */}
+          <line x1="390" y1="100" x2="390" y2="118" stroke="rgba(232, 213, 163, 0.1)" strokeWidth="1.5" />
+          <line x1="400" y1="100" x2="400" y2="118" stroke="rgba(232, 213, 163, 0.1)" strokeWidth="1.5" />
+          <line x1="410" y1="100" x2="410" y2="118" stroke="rgba(232, 213, 163, 0.1)" strokeWidth="1.5" />
+          {/* Stumps - bottom */}
+          <line x1="390" y1="482" x2="390" y2="500" stroke="rgba(232, 213, 163, 0.1)" strokeWidth="1.5" />
+          <line x1="400" y1="482" x2="400" y2="500" stroke="rgba(232, 213, 163, 0.1)" strokeWidth="1.5" />
+          <line x1="410" y1="482" x2="410" y2="500" stroke="rgba(232, 213, 163, 0.1)" strokeWidth="1.5" />
           {/* Pitch center axis */}
-          <line x1="400" y1="130" x2="400" y2="470" stroke="rgba(74, 222, 128, 0.05)" strokeWidth="1.5" strokeDasharray="8 8" />
+          <line x1="400" y1="130" x2="400" y2="470" stroke="rgba(45, 122, 66, 0.04)" strokeWidth="1" strokeDasharray="6 8" />
         </svg>
       </div>
 

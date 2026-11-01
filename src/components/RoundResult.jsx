@@ -1,13 +1,13 @@
 import React from 'react';
 
 const WINNER_CONFIG = {
-  player: { icon: '🎉', label: 'You Win!', color: '#4caf50', bg: '#1a2f1a' },
-  model:  { icon: '🤖', label: 'AI Wins!',  color: '#f44336', bg: '#2f1a1a' },
-  draw:   { icon: '🤝', label: 'Draw!',      color: '#ff9800', bg: '#2f261a' },
+  player: { icon: '🎉', label: 'You Win!', color: '#3d9956', bg: '#0f2316' },
+  model:  { icon: '🤖', label: 'AI Wins!',  color: '#c0392b', bg: '#1e1010' },
+  draw:   { icon: '🤝', label: 'Draw!',      color: '#d4a017', bg: '#1e1a0c' },
 };
 
 const DiffBadge = ({ diff, winner }) => {
-  const color = diff === 0 ? '#4caf50' : diff === 1 ? '#ff9800' : diff <= 3 ? '#ffc107' : '#ef5350';
+  const color = diff === 0 ? '#3d9956' : diff === 1 ? '#d4a017' : diff <= 3 ? '#e67e22' : '#c0392b';
   return (
     <span className="diff-badge" style={{ color, borderColor: color }}>
       {diff === 0 ? '✓ Exact!' : `±${diff}`}
